@@ -1,0 +1,25 @@
+name: Prakiraan Cuaca Harian
+
+on:
+  schedule:
+    - cron: '15 23 * * *'  # 23:15 UTC = 06:15 WIB setiap hari
+  workflow_dispatch:        # Bisa juga dijalankan manual
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Jalankan skrip prakiraan
+        run: python main.py
