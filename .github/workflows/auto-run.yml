@@ -3,8 +3,8 @@ name: Run Prakiraan Cuaca
 on:
   workflow_dispatch:
   schedule:
-    - cron: '47 8 * * *'  # Setiap hari jam 05:00 WIB
-    - cron: '49 8 * * *'
+    - cron: '7 9 * * *'  # Setiap hari jam 05:00 WIB
+    - cron: '9 9 * * *'
 
 jobs:
   build:
