@@ -234,22 +234,22 @@ print(f"✅ Gambar prakiraan selesai: {output_path}")
 import smtplib
 from email.message import EmailMessage
 
-# Buat email
+# Buat email    
 msg = EmailMessage()
 msg['Subject'] = '📡 Prakiraan Cuaca Harian STMKG'
-msg['From'] = 'ferdyindra38@@gmail.com'
-msg['To'] = 'ferdyindra586l@gmail.com'
+msg['From'] = 'ferdyindra38@gmail.com'
+msg['To'] = 'ferdyindra586@gmail.com'
 msg.set_content('Berikut adalah gambar prakiraan cuaca yang telah dibuat secara otomatis.')
 
 # Baca dan attach gambar
-with open("/home/ferdy/prakiraan/prakiraan_terisi.png", "rb") as f:
+with open("D:\STMKG\Prakiraan_Cuaca_STMKG\prakiraan_terisi.png", "rb") as f:
     file_data = f.read()
     file_name = "prakiraan_terisi.png"
     msg.add_attachment(file_data, maintype='image', subtype='png', filename=file_name)
 
 # Kirim email
 with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
-    smtp.login('your_email@gmail.com', 'tnna udpl fsjo eoge')  # App password, bukan password biasa
+    smtp.login(os.environ.get('EMAIL_USER'), os.environ.get('EMAIL_APP_PASSWORD')) # App password, bukan password biasa
     smtp.send_message(msg)
 
 print("✅ Email berhasil dikirim!")
