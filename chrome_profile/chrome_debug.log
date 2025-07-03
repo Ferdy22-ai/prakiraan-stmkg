@@ -1,0 +1,13 @@
+[18420:3340:0703/065219.396:INFO:components\enterprise\browser\controller\chrome_browser_cloud_management_controller.cc:202] No machine level policy manager exists.
+[16820:18620:0703/065219.899:INFO:third_party\webrtc\rtc_base\cpu_info.cc:57] Available number of cores: 4
+[16788:7364:0703/065220.592:INFO:third_party\webrtc\rtc_base\cpu_info.cc:57] Available number of cores: 4
+[6264:3704:0703/065220.636:VERBOSE1:components\viz\service\main\viz_main_impl.cc:86] VizNullHypothesis is disabled (not a warning)
+[13928:15336:0703/065221.065:INFO:third_party\webrtc\rtc_base\cpu_info.cc:57] Available number of cores: 4
+[6900:14516:0703/065221.384:INFO:third_party\webrtc\rtc_base\cpu_info.cc:57] Available number of cores: 4
+[18420:3340:0703/065221.481:INFO:CONSOLE:163] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yh/r/kC2PdXeCt0s.js (163)
+[7600:3376:0703/065221.634:INFO:third_party\webrtc\rtc_base\cpu_info.cc:57] Available number of cores: 4
+[18420:15692:0703/065243.842:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[14268:14036:0703/065244.571:INFO:third_party\webrtc\rtc_base\cpu_info.cc:57] Available number of cores: 4
+[18420:3340:0703/065245.784:INFO:CONSOLE:163] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yt/r/Izte8aAY7kg.js (163)
+[18420:3340:0703/065254.463:INFO:CONSOLE:39] "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently", source: https://static.whatsapp.net/rsrc.php/v4icEf4/ye/l/rt/ux_Mn6YHiBte25flAtkfFecmcgfZ2Brzn2dDsB8mjg2bQ42Ep5p_kNNwdSLLt122faAUeSLbaAl_b9xzK9TNQZMeLadkxQJUOTn1-w6ra_JoBUxos_EzNfcyOtQWzMnwH96e.js (39)
+[18420:15692:0703/065305.199:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT

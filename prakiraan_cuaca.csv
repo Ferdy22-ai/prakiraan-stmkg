@@ -1,0 +1,21 @@
+Tanggal,Jam,Cuaca,Suhu (°C),Kelembapan (%),Kecepatan Angin (km/j),Kecepatan Angin (knots),Arah Angin (°),File Ikon
+2025-07-03,12:00,Cerah,33,66,3,1.6,81,cerah-am.svg
+2025-07-03,15:00,Hujan Ringan,28,77,5.8,3.1,302,hujan ringan-am.svg
+2025-07-03,18:00,Hujan Ringan,26,94,6,3.2,209,hujan ringan-pm.svg
+2025-07-03,21:00,Hujan Ringan,25,95,2.6,1.4,116,hujan ringan-pm.svg
+2025-07-04,00:00,Cerah Berawan,23,95,5.7,3.1,111,cerah berawan-pm.svg
+2025-07-04,03:00,Cerah Berawan,25,97,3.5,1.9,272,cerah berawan-pm.svg
+2025-07-04,06:00,Berawan,28,96,4.5,2.4,280,berawan-am.svg
+2025-07-04,09:00,Cerah Berawan,30,74,0.9,0.5,155,cerah berawan-am.svg
+2025-07-04,12:00,Cerah,33,70,1.8,1.0,188,cerah-am.svg
+2025-07-04,15:00,Hujan Ringan,28,81,2.6,1.4,185,hujan ringan-am.svg
+2025-07-04,18:00,Hujan Ringan,26,89,1.2,0.6,2,hujan ringan-pm.svg
+2025-07-04,21:00,Hujan Ringan,25,93,0.6,0.3,259,hujan ringan-pm.svg
+2025-07-05,00:00,Berawan,23,96,2,1.1,215,berawan-pm.svg
+2025-07-05,03:00,Berawan,25,96,3.1,1.7,214,berawan-pm.svg
+2025-07-05,06:00,Cerah Berawan,28,95,4.4,2.4,111,cerah berawan-am.svg
+2025-07-05,09:00,Hujan Ringan,31,77,4.4,2.4,111,hujan ringan-am.svg
+2025-07-05,12:00,Hujan Ringan,32,69,5.8,3.1,61,hujan ringan-am.svg
+2025-07-05,15:00,Berawan,30,74,5.8,3.1,61,berawan-am.svg
+2025-07-05,18:00,Cerah,27,90,6.2,3.3,150,cerah-pm.svg
+2025-07-05,21:00,Berawan,25,95,6.2,3.3,150,berawan-pm.svg
