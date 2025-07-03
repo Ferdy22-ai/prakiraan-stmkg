@@ -1,25 +1,29 @@
-name: Prakiraan Cuaca Harian
+name: Run Prakiraan Cuaca
 
 on:
+  workflow_dispatch:
   schedule:
-    - cron: '08 05 * * *'  # 23:15 UTC = 06:15 WIB setiap hari
-  workflow_dispatch:        # Bisa juga dijalankan manual
+    - cron: '0 22 * * *'  # Setiap hari jam 05:00 WIB
 
 jobs:
-  run-script:
+  build:
     runs-on: ubuntu-latest
+
+    env:
+      EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
+      EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v4
         with:
-          python-version: '3.11'
+          python-version: 3.11
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pip install requests pandas pillow
 
-      - name: Jalankan skrip prakiraan
+      - name: Run script
         run: python main.py
