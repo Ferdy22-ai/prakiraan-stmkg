@@ -5,8 +5,10 @@ on:
   schedule:
     - cron: '25 9 * * *'  # Setiap hari jam 05:00 WIB
     - cron: '26 9 * * *'
+    - cron: '27 9 * * *'
     - cron: '9 23 * * *'
-    - cron: '12 23 * * *'
+    - cron: '10 23 * * *'
+    - cron: '11 23 * * *'
 
 jobs:
   build:
