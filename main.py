@@ -13,7 +13,7 @@ os.makedirs(output_dir, exist_ok=True)
 os.makedirs(icon_dir, exist_ok=True)
 
 # URL API BMKG
-url = "https://api.bmkg.go.id/publik/prakiraan-cuaca?adm4=36.71.01.1003"
+url = "url = "https://prakiraan-stmkg.onrender.com/bmkg"
 headers = {
     'User-Agent': 'Mozilla/5.0'
 }
