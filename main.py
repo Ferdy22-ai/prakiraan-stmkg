@@ -13,10 +13,11 @@ os.makedirs(output_dir, exist_ok=True)
 os.makedirs(icon_dir, exist_ok=True)
 
 # URL API BMKG
-url = "url = "url = "https://Ferdy22.pythonanywhere.com/cuaca"
-"
+url = "https://api.bmkg.go.id/publik/prakiraan-cuaca?adm4=36.71.01.1003"
+
+# Tambahkan User-Agent header
 headers = {
-    'User-Agent': 'Mozilla/5.0'
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
 }
 
 # Ambil data
