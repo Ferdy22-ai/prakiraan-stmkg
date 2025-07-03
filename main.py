@@ -13,7 +13,8 @@ os.makedirs(output_dir, exist_ok=True)
 os.makedirs(icon_dir, exist_ok=True)
 
 # URL API BMKG
-url = "url = "https://prakiraan-stmkg.onrender.com/bmkg"
+url = "url = "url = "https://Ferdy22.pythonanywhere.com/cuaca"
+"
 headers = {
     'User-Agent': 'Mozilla/5.0'
 }
