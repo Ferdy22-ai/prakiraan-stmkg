@@ -186,7 +186,7 @@ EMAIL_PASSWORD = os.environ["EMAIL_PASSWORD"]
 msg = EmailMessage()
 msg['Subject'] = 'Prakiraan Cuaca Harian STMKG'
 msg['From'] = EMAIL_ADDRESS
-msg['To'] = 'ferdyindra586@gmail.com'
+msg['To'] = 'bayufirdanan@gmail.com'
 msg.set_content('Berikut prakiraan cuaca hari ini dalam format gambar dan CSV.')
 
 # Lampirkan gambar
