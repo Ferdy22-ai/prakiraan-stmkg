@@ -5,7 +5,7 @@ import pandas as pd
 from PIL import Image, ImageDraw, ImageFont
 from email.message import EmailMessage
 import smtplib
-      
+
 # === Setup direktori ===
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 output_dir = os.path.join(BASE_DIR, "output")
