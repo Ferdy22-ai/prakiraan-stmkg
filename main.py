@@ -175,6 +175,7 @@ for item in data:
             print(f"⚠️ Gagal menempelkan ikon arah angin di baris {baris}")
     else:
         draw.text((x, y), nilai, font=font, fill="white")
+     draw.text((x, y), nilai, font=font, fill="white")
 
 img.save(img_path)
 print(f"✅ Gambar disimpan di: {img_path}")
