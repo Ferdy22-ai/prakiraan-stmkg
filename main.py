@@ -167,18 +167,19 @@ for item in data:
 
     if "File Ikon" in kolom:
         paste_ikon_cuaca(img, icon_dir, (x, y), nilai)
+
     elif "Kecepatan Angin" in kolom:
         arah = ambil_nilai(df, baris, "Arah Angin (°)")
         try:
             paste_rotated_icon(img, ikon_arah_path, (x - 60, y + 20), float(arah))
         except:
             print(f"⚠️ Gagal menempelkan ikon arah angin di baris {baris}")
+        # Tampilkan angka kecepatan angin juga
+        draw.text((x, y), nilai, font=font, fill="white")
+
     else:
         draw.text((x, y), nilai, font=font, fill="white")
-    # Tambahkan angka kecepatan angin
-        draw.text((x, y), nilai, font=font, fill="white")
-    else:
-        draw.text((x, y), nilai, font=font, fill="white")
+
 
 img.save(img_path)
 print(f"✅ Gambar disimpan di: {img_path}")
