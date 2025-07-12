@@ -5,15 +5,23 @@ import pandas as pd
 from PIL import Image, ImageDraw, ImageFont
 from email.message import EmailMessage
 import smtplib
-    
+from datetime import datetime
+
+# Dapatkan tanggal sekarang
+tanggal_sekarang = datetime.now().strftime("%d-%B-%Y")  # contoh: 12-Juli-2025
+
+# Nama file berdasarkan tanggal
+nama_csv = f"Prakiraan Cuaca STMKG {tanggal_sekarang}.csv"
+nama_png = f"Prakiraan Cuaca STMKG {tanggal_sekarang}.png"
+
 # === Setup direktori ===
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 output_dir = os.path.join(BASE_DIR, "output")
 icon_dir = os.path.join(BASE_DIR, "ikon_cuaca")
 template_path = os.path.join(BASE_DIR, "3.png")
 font_path = os.path.join(BASE_DIR, "BAHNSCHRIFT 1.TTF")
-csv_path = os.path.join(output_dir, "prakiraan_cuaca.csv")
-img_path = os.path.join(output_dir, "prakiraan_terisi.png")
+csv_path = os.path.join(output_dir, nama_csv)
+img_path = os.path.join(output_dir, nama_png)
 ikon_arah_path = os.path.join(icon_dir, "ikon_arah_angin.png")
 
 os.makedirs(output_dir, exist_ok=True)
@@ -191,7 +199,7 @@ EMAIL_PASSWORD = os.environ["EMAIL_PASSWORD"]
 msg = EmailMessage()
 msg['Subject'] = 'Prakiraan Cuaca Harian STMKG'
 msg['From'] = EMAIL_ADDRESS
-msg['To'] = 'bayufirdanan@gmail.com'
+msg['To'] = ', '.join(['bayufirdanan@gmail.com', 'ashamadnusriah@gmail.com'])
 msg.set_content('Berikut prakiraan cuaca hari ini dalam format gambar dan CSV.')
 
 # Lampirkan gambar
@@ -207,4 +215,4 @@ with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
     smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
     smtp.send_message(msg)
 
-print("✅ Email beserta CSV dan gambar berhasil dikirim.")
+print("✅ Email beserta CSV dan gambar berhasil dikirim ke semua penerima.")
