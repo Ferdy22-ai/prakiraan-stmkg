@@ -13,7 +13,7 @@ tanggal_sekarang = datetime.now().strftime("%d-%B-%Y")  # contoh: 12-Juli-2025
 # Nama file berdasarkan tanggal
 nama_csv = f"Prakiraan Cuaca STMKG {tanggal_sekarang}.csv"
 nama_png = f"Prakiraan Cuaca STMKG {tanggal_sekarang}.png"
-
+ 
 # === Setup direktori ===
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 output_dir = os.path.join(BASE_DIR, "output")
