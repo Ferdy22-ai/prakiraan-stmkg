@@ -6,7 +6,7 @@ from PIL import Image, ImageDraw, ImageFont
 from email.message import EmailMessage
 import smtplib
 from datetime import datetime
-   
+    
 # Dapatkan tanggal sekarang
 tanggal_sekarang = datetime.now().strftime("%d-%B-%Y")  # contoh: 12-Juli-2025
 
