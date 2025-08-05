@@ -204,11 +204,11 @@ msg.set_content('Berikut prakiraan cuaca hari ini dalam format gambar dan CSV.')
 
 # Lampirkan gambar
 with open(img_path, "rb") as f_img:
-    msg.add_attachment(f_img.read(), maintype='image', subtype='png', filename='prakiraan_terisi.png')
+    msg.add_attachment(f_img.read(), maintype='image', subtype='png', filename=nama_png)
 
 # Lampirkan CSV
 with open(csv_path, "rb") as f_csv:
-    msg.add_attachment(f_csv.read(), maintype='text', subtype='csv', filename='prakiraan_cuaca.csv')
+    msg.add_attachment(f_csv.read(), maintype='text', subtype='csv', filename=nama_csv)
 
 # Kirim email
 with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
@@ -216,6 +216,7 @@ with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
     smtp.send_message(msg)
 
 print("✅ Email beserta CSV dan gambar berhasil dikirim ke semua penerima.")
+
 
 
 
