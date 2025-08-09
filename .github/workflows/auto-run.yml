@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '5 23 * * *'  # 06:05 WIB (besok)
-   
+    
 jobs: 
   build:
     runs-on: ubuntu-latest
