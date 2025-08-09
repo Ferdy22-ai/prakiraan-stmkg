@@ -8,7 +8,7 @@ import smtplib
 from datetime import datetime
 
 # Dapatkan tanggal sekarang
-tanggal_sekarang = datetime.now().strftime("%d-%B-%Y")  # contoh: 12-Juli-2025
+tanggal_waktu_sekarang = (datetime.utcnow() + timedelta(hours=7)).strftime("%d-%B-%Y %H.%M WIB")  # contoh: 12-Juli-2025
 
 # Nama file berdasarkan tanggal
 nama_csv = f"Prakiraan Cuaca STMKG {tanggal_sekarang}.csv"
@@ -216,6 +216,7 @@ with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
     smtp.send_message(msg)
 
 print("✅ Email beserta CSV dan gambar berhasil dikirim ke semua penerima.")
+
 
 
 
