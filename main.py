@@ -5,7 +5,7 @@ import pandas as pd
 from PIL import Image, ImageDraw, ImageFont
 from email.message import EmailMessage
 import smtplib
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta 
   
 # Dapatkan tanggal sekarang
 tanggal_waktu_sekarang = (datetime.utcnow() + timedelta(hours=7)).strftime("%d-%B-%Y %H.%M WIB")  # contoh: 12-Juli-2025
@@ -216,6 +216,7 @@ with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
     smtp.send_message(msg)
 
 print("✅ Email beserta CSV dan gambar berhasil dikirim ke semua penerima.")
+
 
 
 
