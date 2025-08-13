@@ -196,6 +196,11 @@ print(f"✅ Gambar disimpan di: {img_path}")
 EMAIL_ADDRESS = os.environ["EMAIL_ADDRESS"]
 EMAIL_PASSWORD = os.environ["EMAIL_PASSWORD"]
 
+with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
+    smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
+    smtp.send_message(msg)
+
+
 msg = EmailMessage()
 msg['Subject'] = 'Prakiraan Cuaca Harian STMKG'
 msg['From'] = EMAIL_ADDRESS
@@ -216,6 +221,7 @@ with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
     smtp.send_message(msg)
 
 print("✅ Email beserta CSV dan gambar berhasil dikirim ke semua penerima.")
+
 
 
 
