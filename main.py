@@ -6,7 +6,7 @@ from PIL import Image, ImageDraw, ImageFont
 from email.message import EmailMessage
 import smtplib
 from datetime import datetime, timedelta 
-  
+   
 # Dapatkan tanggal sekarang
 tanggal_waktu_sekarang = (datetime.utcnow() + timedelta(hours=7)).strftime("%d-%B-%Y %H.%M WIB")  # contoh: 12-Juli-2025
 
@@ -228,6 +228,7 @@ cl.login(IG_USERNAME, IG_PASSWORD)
 
 cl.photo_upload_to_story(img_path, "Prakiraan Cuaca STMKG hari ini 🌦️")
 print("✅ Story berhasil diupload ke Instagram.")
+
 
 
 
