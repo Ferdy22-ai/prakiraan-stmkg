@@ -28,7 +28,7 @@ jobs:
           python-version: 3.11
 
       - name: Install dependencies
-        run: pip install requests pandas pillow
+        run: pip install requests pandas pillow instagrapi
 
       - name: Run script
         run: python main.py
