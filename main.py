@@ -217,17 +217,6 @@ with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
 
 print("✅ Email beserta CSV dan gambar berhasil dikirim ke semua penerima.")
 
-from instagrapi import Client
-
-# === Upload ke Instagram Story ===
-IG_USERNAME = os.environ["IG_USERNAME"]
-IG_PASSWORD = os.environ["IG_PASSWORD"]
-
-cl = Client()
-cl.login(IG_USERNAME, IG_PASSWORD)
-
-cl.photo_upload_to_story(img_path, "Prakiraan Cuaca STMKG hari ini 🌦️")
-print("✅ Story berhasil diupload ke Instagram.")
 
 
 
