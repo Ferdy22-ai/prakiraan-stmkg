@@ -199,7 +199,7 @@ EMAIL_PASSWORD = os.environ["EMAIL_PASSWORD"]
 msg = EmailMessage()
 msg['Subject'] = f'Prakiraan Cuaca Harian STMKG - {tanggal_waktu_sekarang}'
 msg['From'] = EMAIL_ADDRESS
-msg['To'] = ', '.join(['bayufirdanan@gmail.com', 'ashamadnusriah@gmail.com'])
+msg['To'] = ', '.join(['bayufirdanan@gmail.com', 'ashamadnusriah@gmail.com', 'mulmeditmstmkg@gmail.com'])
 msg.set_content('Berikut prakiraan cuaca hari ini dalam format gambar dan CSV.')
 
 # Lampirkan gambar
@@ -216,6 +216,7 @@ with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
     smtp.send_message(msg)
 
 print("✅ Email beserta CSV dan gambar berhasil dikirim ke semua penerima.")
+
 
 
 
